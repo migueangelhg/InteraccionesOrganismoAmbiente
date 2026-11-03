@@ -6,12 +6,14 @@ Este repositorio contiene el código y los resultados del análisis de la comuni
 
 El área de muestreo se ubica en la región de Nouvelle-Aquitaine (Suroeste de Francia), un paisaje en mosaico compuesto por viñedos y bosques templados. Los datos originales de secuenciación provienen del BioProject **PRJNA508496** (Laurent et al., 2020), del cual se extrajeron exclusivamente las muestras correspondientes a *Quercus robur* para los marcadores ITS y LSU.
 
-![Mapa de Estudio](./resultados/Figuras/SitiodeEstudioQrobur.png)
+![Mapa de Estudio](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/resultados/Figuras/SitiodeEstudioQrobur.png)
 
 **Mapa Interactivo (Leaflet):** 
 El repositorio incluye un mapa interactivo generado con la librería Leaflet, que permite explorar las muestras con capas base de OpenStreetMap y satelitales, además de un minimapa de contexto. 
-*Nota: GitHub no renderiza archivos HTML interactivos de forma nativa por seguridad. Para visualizarlo, haz clic en el siguiente enlace para abrirlo en tu navegador:*
-**[Abrir Mapa Interactivo de Leaflet](./resultados/Elipsoides_Qrobur/mapa_interactivo_con_inset.html)** *(o descarga el archivo y ábrelo localmente).*
+
+*Nota: GitHub no renderiza archivos HTML interactivos de forma nativa por seguridad. Para visualizarlo, haz clic en el siguiente enlace, descarga el archivo y ábrelo localmente:*
+
+**[Descargar Mapa Interactivo de Leaflet](https://github.com/migueangelhg/InteraccionesOrganismoAmbiente/raw/main/resultados/Elipsoides_Qrobur/mapa_interactivo_con_inset.html)**
 
 ## 2. Metodología
 
@@ -46,7 +48,7 @@ Los árboles sanos presentan valores significativamente más altos de diversidad
 
 El NMDS muestra una clara separación entre ambas condiciones (**PERMANOVA R² = 0.32, p = 0.001**). La partición de Sørensen revela que esta diferencia se debe casi en su totalidad al **anidamiento** (91-94%), indicando que las comunidades enfermas son un subconjunto empobrecido de las comunidades sanas, más que un recambio total de especies.
 
-![Diversidad Alfa y Beta](./resultados/Figuras/fig_alpha_nmds_beta.png)
+![Diversidad Alfa y Beta](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/resultados/Figuras/fig_alpha_nmds_beta.png)
 
 ### 3.2. Asignación Ecológica (FUNGuild)
 Los gremios ecológicos dominantes, tanto en abundancia de ASVs como en riqueza de géneros, son:
@@ -55,22 +57,31 @@ Los gremios ecológicos dominantes, tanto en abundancia de ASVs como en riqueza 
 3. **Saprótrofos de suelo/hojarasca** (17.8%).
 4. **Endófitos** (15.7%).
 
-![Gremios Ecológicos](./resultados/Figuras/ITS_grupos_ecologicos_guildPie.png)
+![Gremios Ecológicos](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/resultados/Figuras/ITS_grupos_ecologicos_guildPie.png)
 
 ### 3.3. Redes de Co-ocurrencia
 *   **Red Sana:** Presenta una topología menos conectada (53 aristas), con una estructura modular clara y presencia de nodos aislados, lo que sugiere una comunidad compartimentada y estable.
 *   **Red Enferma:** Se observa una red altamente conectada (116 aristas), con un núcleo denso que sugiere una respuesta ecológica desregulada, pérdida de compartimentación o un incremento en la competencia por recursos.
 
-![Redes de Co-ocurrencia Sano vs Enfermo](./resultados/Figuras/fig_panel_AB_v13.png)
+![Redes de Co-ocurrencia Sano vs Enfermo](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/resultados/Figuras/fig_panel_AB_v13.png)
 
 ### 3.4. Modelado de Nicho Ecológico (ENM)
 El análisis de solapamiento (Jaccard) indica que, aunque las comunidades sana y enferma tienen un alto solapamiento entre sí, ambas ocupan una fracción muy específica y restringida del nicho climático global de la especie hospedadora (*Q. robur*).
 
-<img src="./resultados/Figuras/plot_solapamiento_3_modelos.png" alt="Elipsoides de Nicho" width="60%">
+<img src="https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/resultados/Figuras/plot_solapamiento_3_modelos.png" alt="Elipsoides de Nicho" width="60%">
 
 **Proyección Futura (SSP245 - 2050):** El modelo predice una drástica reducción y desplazamiento del área climáticamente idónea. Las zonas de alta idoneidad se contraen y migran hacia el norte de Europa, lo que podría comprometer la estabilidad del holobionte planta-hongo en su distribución actual.
 
-![Cambio Climático Futuro](./resultados/Figuras/panel_especie_presente_futuro_cambio.png)
+![Cambio Climático Futuro](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/resultados/Figuras/panel_especie_presente_futuro_cambio.png)
 
 ## 4. Referencias
-(Ver referencias en el documento original)
+
+- Baselga, A. (2010). Partitioning the turnover and nestedness components of beta diversity. *Global Ecology and Biogeography*, 19(1), 134–143.
+- Callahan, B. J., McMurdie, P. J., Rosen, M. J., Han, A. W., Johnson, A. J. A., & Holmes, S. P. (2016). DADA2: High-resolution sample inference from Illumina amplicon data. *Nature Methods*, 13(7), 581–583.
+- Csárdi, G., & Nepusz, T. (2006). The igraph software package for complex network research. *InterJournal, Complex Systems*, 1695(5), 1–9.
+- Fick, S. E., & Hijmans, R. J. (2017). WorldClim 2: New 1-km spatial resolution climate surfaces for global land areas. *International Journal of Climatology*, 37(12), 4302–4315.
+- Laurent, B., Marchand, M., Chancerel, E., Saint-Jean, G., Capdevielle, X., Poeydebat, C., … & Desprez-Loustau, M. L. (2020). A richer community of Botryosphaeriaceae within a less diverse community of fungal endophytes in grapevines than in adjacent forest trees revealed by a mixed metabarcoding strategy. *Phytobiomes Journal*, 4(3), 252–267.
+- Nguyen, N. H., Song, Z., Bates, S. T., Branco, S., Tedersoo, L., Menke, J., … & Kennedy, P. G. (2016). FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. *Fungal Ecology*, 20, 241–248.
+- Oksanen, J., Blanchet, F. G., Friendly, M., Kindt, R., Legendre, P., McGlinn, D., … & Wagner, H. (2020). *vegan: Community Ecology Package*. R package version 2.5-7.
+- Osorio-Olvera, L., Lira-Noriega, A., Soberón, J., Peterson, A. T., Falconi, M., Contreras-Díaz, R. G., … & Barve, N. (2020). ntbox: An R package with graphical user interface for modelling and evaluating multidimensional ecological niches. *Methods in Ecology and Evolution*, 11(10), 1199–1206.
+- Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B., Stouffer, R. J., & Taylor, K. E. (2016). Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimental design and organization. *Geoscientific Model Development*, 9(5), 1937–1958.
