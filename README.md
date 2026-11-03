@@ -6,12 +6,7 @@ Este repositorio contiene el código y los resultados del análisis de la comuni
 
 El área de muestreo se ubica en la región de Nouvelle-Aquitaine (Suroeste de Francia), un paisaje en mosaico compuesto por viñedos y bosques templados. Los datos originales de secuenciación provienen del BioProject **PRJNA508496** (Laurent et al., 2020), del cual se extrajeron exclusivamente las muestras correspondientes a *Quercus robur* para los marcadores ITS y LSU.
 
-![Mapa de Estudio](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/InteraccionesOrganismoAmbiente/resultados/Figuras/SitiodeEstudioQrobur.png)
-
-**Mapa Interactivo (Leaflet):** 
-El repositorio incluye un mapa interactivo generado con la librería Leaflet. Para visualizarlo, haz clic en el siguiente enlace, descarga el archivo y ábrelo localmente:
-
-**[Descargar Mapa Interactivo de Leaflet](https://github.com/migueangelhg/InteraccionesOrganismoAmbiente/raw/main/InteraccionesOrganismoAmbiente/resultados/Elipsoides_Qrobur/mapa_interactivo_con_inset.html)**
+![Mapa de Estudio](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/SitiodeEstudioQrobur.png)
 
 ## 2. Metodología
 
@@ -46,7 +41,7 @@ Los árboles sanos presentan valores significativamente más altos de diversidad
 
 El NMDS muestra una separación clara entre condiciones (**PERMANOVA R² = 0.32, p = 0.001**). La partición de Sørensen revela que la diferencia se debe al **anidamiento (91-94%)**: las comunidades enfermas son un subconjunto empobrecido de las sanas, más que un recambio total de especies.
 
-![Diversidad Alfa y Beta](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/InteraccionesOrganismoAmbiente/resultados/Figuras/fig_alpha_nmds_beta.png)
+![Diversidad Alfa y Beta](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/fig_alpha_nmds_beta.png)
 
 ### 3.2. Asignación Ecológica (FUNGuild)
 Gremios dominantes:
@@ -55,22 +50,22 @@ Gremios dominantes:
 3. **Saprótrofos de suelo/hojarasca** (17.8%)
 4. **Endófitos** (15.7%)
 
-![Gremios Ecológicos](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/InteraccionesOrganismoAmbiente/resultados/Figuras/ITS_grupos_ecologicos_guildPie.png)
+![Gremios Ecológicos](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/ITS_grupos_ecologicos_guildPie.png)
 
 ### 3.3. Redes de Co-ocurrencia
 *   **Red Sana:** Topología menos conectada (53 aristas), modularidad clara y nodos aislados. Comunidad compartimentada y estable.
 *   **Red Enferma:** Red altamente conectada (116 aristas), núcleo denso. Pérdida de compartimentación, competencia exacerbada o desregulación ecológica.
 
-![Redes de Co-ocurrencia Sano vs Enfermo](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/InteraccionesOrganismoAmbiente/resultados/Figuras/fig_panel_AB_v13.png)
+![Redes de Co-ocurrencia Sano vs Enfermo](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/fig_panel_AB_v13.png)
 
 ### 3.4. Modelado de Nicho Ecológico (ENM)
 Alto solapamiento (Jaccard) entre las comunidades sana y enferma; ambas ocupan una fracción restringida del nicho climático global de *Q. robur*.
 
-<img src="https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/InteraccionesOrganismoAmbiente/resultados/Figuras/plot_solapamiento_3_modelos.png" alt="Elipsoides de Nicho" width="60%">
+<img src="https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/plot_solapamiento_3_modelos.png" alt="Elipsoides de Nicho" width="60%">
 
 **Proyección Futura (SSP245 - 2050):** Reducción drástica y desplazamiento del área idónea hacia el norte de Europa, comprometiendo la estabilidad del holobionte planta-hongo.
 
-![Cambio Climático Futuro](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/InteraccionesOrganismoAmbiente/resultados/Figuras/panel_especie_presente_futuro_cambio.png)
+![Cambio Climático Futuro](https://raw.githubusercontent.com/migueangelhg/InteraccionesOrganismoAmbiente/main/panel_especie_presente_futuro_cambio.png)
 
 ## 4. Referencias
 
