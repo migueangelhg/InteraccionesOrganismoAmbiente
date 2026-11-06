@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa interactivo de incendios · La Malinche</title>
+  <style>
+    :root {
+      --borde: #d0d7de;
+      --fondo: #f6f8fa;
+      --texto: #1f2328;
+      --acento: #0969da;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 2rem 1.5rem;
+      background: var(--fondo);
+      color: var(--texto);
+      line-height: 1.5;
+    }
+    header { max-width: 1200px; margin: 0 auto 1rem; }
+    h1 { font-size: 1.6rem; margin: 0 0 .35rem; }
+    p  { margin: 0; color: #57606a; }
+    .leyenda { font-size: .9rem; margin-top: .5rem; }
+    .leyenda a { color: var(--acento); text-decoration: none; }
+    .leyenda a:hover { text-decoration: underline; }
+    .visor {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+    }
+    .visor iframe {
+      display: block;
+      width: 100%;
+      height: 78vh;
+      min-height: 480px;
+      border: 0;
+    }
+    footer {
+      max-width: 1200px;
+      margin: 1rem auto 0;
+      font-size: .8rem;
+      color: #6e7781;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      body { padding: 1rem .75rem; }
+      .visor iframe { height: 70vh; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mapa interactivo · Incendios y sitios de muestreo</h1>
+    <p>Área Natural Protegida La Malinche (Tlaxcala, México) · 2020–2025</p>
+    <p class="leyenda">
+      Capas base: Satélite y Topográfico (Esri) ·
+      <a href="malinche_incendios_2020_2025.html" target="_blank" rel="noopener">
+        Abrir el mapa en pantalla completa ↗
+      </a>
+    </p>
+  </header>
+
+  <div class="visor">
+    <iframe
+      src="malinche_incendios_2020_2025.html"
+      title="Mapa interactivo de incendios y sitios de muestreo en La Malinche"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <footer>
+    Fuente de polígonos de incendio: IDEFOR ·
+    Elaborado con R, sf y leaflet
+  </footer>
+</body>
+</html>
